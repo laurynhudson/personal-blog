@@ -1,0 +1,17 @@
+.navContainer {
+    text-align: center;
+    font-family: "DomaineDisplayNarrow", Georgia, serif;
+    font-weight: bold;
+    font-style: normal;
+    padding: 50px;
+  }
+  
+  .inactive {
+    color: #311432;
+  }
+  
+  /*why is this not setting the hover color?*/
+  .NavLink:hover {
+    color: rebeccapurple;
+  }
+  
