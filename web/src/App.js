@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState, useRef } from 'react';
+import Typed from "typed.js";
 import './App.css';
 import getBlogPosts from './client';
 import NavbarComponent from "./components/Navbar";
@@ -10,6 +10,24 @@ const App = () => {
   
   useEffect(() => {
     getBlogPosts().then(data => setPosts(data))
+  }, []);
+
+  const typeEffect = useRef(null);
+
+  useEffect(() => {
+    const typed = new Typed(typeEffect.current, {
+      strings: ["Software Engineer.", "Problem Solver.", "Philosophy Enthusiast.", "Activist.", "Yogini."], // Strings to display
+      startDelay: 300,
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 100,
+      smartBackspace: true,
+      loop: true
+    });
+
+    return () => {
+      typed.destroy();
+    };
   }, []);
 
   return (
@@ -31,20 +49,11 @@ const App = () => {
           <div className="Intro">Hello</div>
           <div className="about">
             <h4>I'm Lauryn</h4>
-            <p>
-              I’m a software engineer in the ESG fintech space.
-              I...
-            </p>
+            <span ref={typeEffect}></span>
           </div>
         </div>
       </div>
       <FooterComponent></FooterComponent>
-      {/* <h3>Blog coming soon...</h3>
-      <div>
-        {posts.map((item, i) => (
-          <div key={i}>{item}</div>
-        ))}
-      </div> */}
     </div>
   );
 }
