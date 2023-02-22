@@ -38,12 +38,12 @@ const NavbarComponent = (props) => {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/blog" style={{ color: "black" }}>
+              <NavLink href="/about" style={{ color: "black" }}>
                 About
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/blog" style={{ color: "black" }}>
+              <NavLink href="/resume" style={{ color: "black" }}>
                 Resume
               </NavLink>
             </NavItem>
