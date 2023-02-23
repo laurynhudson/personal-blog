@@ -18,7 +18,7 @@ function App() {
 
     useEffect(() => {
       const typed = new Typed(typeEffect.current, {
-        strings: ["Software Engineer.", "Problem Solver.", "Philosophy Enthusiast.", "Activist.", "Yogini."], // Strings to display
+        strings: ["Software Engineer.", "Problem Solver.", "Philosophy Enthusiast.", "Activist.", "Yogini."],
         startDelay: 300,
         typeSpeed: 100,
         backSpeed: 100,
@@ -48,7 +48,7 @@ function App() {
         </div>
         <div className="split-right">
           <div className="centered">
-            <div className="Intro">Hello</div>
+            <div className="Intro">Hello 👋🏽</div>
             <div className="about">
               <h4>I'm Lauryn</h4>
               <span ref={typeEffect}></span>
@@ -64,8 +64,20 @@ function App() {
     return <h2>Resume goes here</h2>;
   };
 
-  const About = () => {
-    return <h2>About goes here</h2>;
+  const About = () => {  
+    return (
+    <div className="About">
+      <img className="ggbridge" src="../ggbridge.jpg" alt="golden gate bridge">
+      </img>
+      <h3 className="header">About Me 👀</h3>
+      <div className="about-p">
+        <p>I'm a software engineer based in San Francisco, working in ESG Fintech. 
+          When I'm not coding you can find me eating at restaurants around the city, plant shopping, or at the beach with my dog Venus. 
+          I'm passionate about health - mental, physical, and spiritual and I'm a certified yoga teacher. 
+          Currently training for a martathon 🏃🏽‍♀️  </p>
+      </div>
+    </div>
+    );
   };
 
   const Blog = () => {

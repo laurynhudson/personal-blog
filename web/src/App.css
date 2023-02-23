@@ -83,3 +83,18 @@
 .grey {
   background-color: lightpink;
 }
+
+.ggbridge {
+  width: 100%;
+}
+
+.header {
+  text-align: center;
+  font-size: 80px;
+  margin: 100px;
+}
+
+.about-p {
+  width: 50%;
+  margin: auto;
+}
