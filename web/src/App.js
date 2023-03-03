@@ -67,14 +67,16 @@ function App() {
   const About = () => {  
     return (
     <div className="About">
-      <img className="ggbridge" src="../ggbridge.jpg" alt="golden gate bridge">
-      </img>
-      <h3 className="header">About Me 👀</h3>
+      {/* <img className="ggbridge" src="../ggbridge.jpg" alt="golden gate bridge">
+      </img> */}
+      <h3 className="header">About Me</h3>
       <div className="about-p">
         <p>I'm a software engineer based in San Francisco, working in ESG Fintech. 
-          When I'm not coding you can find me eating at restaurants around the city, plant shopping, or at the beach with my dog Venus. 
-          I'm passionate about health - mental, physical, and spiritual and I'm a certified yoga teacher. 
-          Currently training for a martathon 🏃🏽‍♀️  </p>
+          When I'm not coding you can find me eating at good restaurants around the city, working out, plant shopping, or at the beach with my dog Venus. 
+          I'm passionate about health + wellness - mental, physical, and spiritual and I'm a certified yoga teacher. 
+          Currently building: Code for the Culture, Mind Body Soul.  </p>
+        <p>As a black woman in tech, I'm inspired to create a more diverse industry in order to promote a more just and humane society (s/o to XULA). 
+          This blog was created to hopefully help others along their journey to becoming the best software engineer they can be, as well as to encourage mindfulness and holistic wellbeing to always be a top priority.</p>
       </div>
     </div>
     );

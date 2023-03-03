@@ -26,7 +26,7 @@ const NavbarComponent = (props) => {
         <NavbarBrand href="/">Lauryn Hudson</NavbarBrand>
         <Nav>
           <NavItem>
-            <NavbarText>Software Engineer</NavbarText>
+            <NavbarText>Tech + Wellness</NavbarText>
           </NavItem>
         </Nav>
         <NavbarToggler onClick={toggle} />
